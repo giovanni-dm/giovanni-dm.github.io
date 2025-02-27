@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me | Giovanni De Maio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index_de.html">Home</a></li>
+                <li><a href="about_de.html">Über mich</a></li>
+                <li><a href="projects_de.html">Projekte</a></li>
+                <li><a href="resume_de.html">Lebenslauf</a></li>
+                <li><a href="contact_de.html">Kontakt</a></li>
+                <li><a href="../index.html" class="header-button">English</a>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact">
+        <h1 style="text-align: center;"><b>Contact Me</b></h1>
+        <form id="contactForm" onsubmit="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <span id="nameError" class="error"></span>
+
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" required>
+            <span id="emailError" class="error"></span>
+
+            <label for="phone">Telefon:</label>
+            <input type="email" id="phone" name="phone">
+            <span id="emailError" class="error"></span>
+
+            <label for="message">Nachricht:</label>
+            <textarea style="height: 150px;" id="message" name="message" required></textarea>
+            <span id="messageError" class="error"></span>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Giovanni De Maio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
