@@ -6,6 +6,49 @@
     <title>Contact Me | Giovanni De Maio</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "TTbyw9rl72u1GToUv",
+            });
+        })();
+    </script>
+
+<script>
+        
+
+    // Add event listener to the form
+    document.getElementById('contactForm').addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Get form values
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const phone = document.getElementById('phone').value;
+        const message = document.getElementById('message').value;
+
+        // Define the parameters for EmailJS
+        const templateParams = {
+            to_email: 'giovanni.de.maio.langella@outlook.com', // Replace with your email address
+            from_name: name,
+            from_email: email,
+            phone: phone,
+            message: message
+        };
+         // Send the email using EmailJS
+         emailjs.send('service_076xmzi', 'template_dwjduvk', templateParams)
+            .then(function (response) {
+                console.log('Email sent successfully:', response);
+                alert('Thank you! Your message has been sent.');
+            }, function (error) {
+                console.error('Failed to send email:', error);
+                alert('Oops! Something went wrong. Please try again later.');
+            });
+    });
+</script>
 </head>
 <body>
     <header>
