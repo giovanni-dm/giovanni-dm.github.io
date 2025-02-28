@@ -43,9 +43,24 @@
             <textarea style="height: 150px;" id="message" name="message" required></textarea>
             <span id="messageError" class="error"></span>
 
-            <button type="submit">Send Message</button>
+            <button id="submitButton" type="submit">Send Message</button>
         </form>
     </section>
+
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contactForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(() => {
+                        console.log('SUCCESS!');
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
 
     <script type="text/javascript">
         (function() {
@@ -60,7 +75,7 @@
         
 
     // Add event listener to the form
-    document.getElementById('contactForm').addEventListener('submit', function (event) {
+    document.getElementById('submitButton').addEventListener('click', function (event) {
         event.preventDefault(); // Prevent the default form submission
 
         // Get form values

@@ -6,6 +6,7 @@
     <title>Contact Me | Giovanni De Maio</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
 
 
@@ -42,11 +43,11 @@
             <textarea style="height: 150px;" id="message" name="message" required></textarea>
             <span id="messageError" class="error"></span>
 
-            <button type="submit">Send Message</button>
+            <button id="submitButton" type="submit">Send Message</button>
         </form>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    
     <script type="text/javascript">
         (function() {
             // https://dashboard.emailjs.com/admin/account
@@ -60,7 +61,7 @@
         
 
     // Add event listener to the form
-    document.getElementById('contactForm').addEventListener('submit', function (event) {
+    document.getElementById('submitButton').addEventListener('click', function (event) {
         event.preventDefault(); // Prevent the default form submission
 
         // Get form values
