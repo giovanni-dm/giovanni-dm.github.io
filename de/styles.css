@@ -179,6 +179,19 @@ img {
     100% { transform: translateX(200%); }
 }
 
+.justified-text {
+    text-align: justify;
+}
+
+/* Ensure it works well on mobile too */
+@media (max-width: 768px) {
+    .justified-text {
+        text-align: justify;
+        padding: 0 10px; /* Adds some spacing on smaller screens */
+    }
+}
+
+
 
 /* Projects section */
 .projects {
@@ -292,6 +305,13 @@ form {
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+}
+
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+        padding: 20px;
+    }
 }
 
 label {
