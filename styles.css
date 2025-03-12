@@ -328,6 +328,7 @@ form {
     form {
         width: 90%;
         padding: 20px;
+        height: fit-content;
     }
 }
 
