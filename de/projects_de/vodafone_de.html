@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vodafone</title>
     <link rel="stylesheet" href="../styles.css">
+     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+  // Optional: Delayed card reveal effect
+  document.addEventListener("DOMContentLoaded", function () {
+    const card = document.querySelector(".animated-card");
+    card.classList.remove("opacity-0", "translate-y-4");
+  });
+</script>
 </head>
 <body>
     <header>
@@ -21,41 +29,60 @@
         </nav>
     </header>
 
-    <section id="vodafone-erfahrung">
-  <h2>Erfahrung bei Vodafone Global Group (2010–2014)</h2>
-  <p><strong>Rollen:</strong> Senior Agile Tester, QA technische Führungskraft, Softwaretester</p>
-  <p><strong>Ort:</strong> Düsseldorf, Deutschland</p>
+   <section id="vodafone-erfahrung" class="flex justify-center items-center min-h-screen bg-black text-white px-4 py-10">
+  <div class="animated-card opacity-0 translate-y-4 transition-all duration-1000 ease-out bg-gray-900 p-8 rounded-2xl shadow-lg w-full max-w-6xl">
+    
+    <h2 class="text-2xl font-bold text-purple-400 mb-2">Erfahrung bei Vodafone Global Group (2010–2014)</h2>
+    <p><strong>Rollen:</strong> Senior Agile Tester, QA technische Führungskraft, Softwaretester</p>
+    <p><strong>Ort:</strong> Düsseldorf, Deutschland</p>
 
-  <h3>Überblick</h3>
-  <p>
-    Langjährige Erfahrung in der Qualitätssicherung, Testautomatisierung und technischen Leitung bei der Vodafone Global Group. Beteiligung an internationalen Projekten zur Einführung und Optimierung von Mobilfunkdiensten und Anwendungen auf mehreren Plattformen.
-  </p>
+    <h3 class="text-lg font-semibold text-purple-400 mt-6 mb-2">Überblick</h3>
+    <p class="mb-4">
+      Langjährige Erfahrung in der Qualitätssicherung, Testautomatisierung und technischen Leitung bei der Vodafone Global Group. Beteiligung an internationalen Projekten zur Einführung und Optimierung von Mobilfunkdiensten und Anwendungen auf mehreren Plattformen.
+    </p>
 
-  <h3>Hauptverantwortlichkeiten</h3>
-  <ul>
-    <li>Zertifizierungsprozess für über 13 Dienste wie Vodafone Wallet und Updates.</li>
-    <li>Mobile Testing auf iOS, Android, Windows Phone und BlackBerry.</li>
-    <li>Functional Testing, Static Analysis, Regression Testing und UI Testing.</li>
-    <li>Erstellung und Ausführung automatisierter Tests mit Selenium WebDriver und Java.</li>
-    <li>Technische Leitung und Ticketkoordination in agilen Teams (Scrum).</li>
-    <li>Testfall-Erstellung, Testplanung und Testdurchführung inkl. MMS-Codekonverter.</li>
-    <li>Erstellung und Pflege von Projekt- und Gerätedokumentationen (Wiki-basiert).</li>
-    <li>Webentwicklung (CSS-Anpassungen für Vodafone Live Portal).</li>
-    <li>Verantwortung für Vodafone CMS und App-Management (z.B. Discover, Updates).</li>
-    <li>Entwicklung der Android-App „Devicepedia“ zur Systemanalyse von Geräten.</li>
-    <li>Service Integration Management für kontaktloses Bezahlen mit NFC.</li>
-    <li>Kommunikation mit Providern in über 13 Ländern.</li>
-    <li>Teamkoordination und Schulung neuer Mitglieder.</li>
-  </ul>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div>
+        <h3 class="text-lg font-semibold text-purple-400 mb-2">Hauptverantwortlichkeiten</h3>
+        <ul class="list-disc pl-5 space-y-1">
+          <li>Zertifizierungsprozess für über 13 Dienste wie Vodafone Wallet und Updates.</li>
+          <li>Mobile Testing auf iOS, Android, Windows Phone und BlackBerry.</li>
+          <li>Functional Testing, Static Analysis, Regression Testing und UI Testing.</li>
+          <li>Erstellung und Ausführung automatisierter Tests mit Selenium WebDriver und Java.</li>
+          <li>Technische Leitung und Ticketkoordination in agilen Teams (Scrum).</li>
+          <li>Testfall-Erstellung, Testplanung und Testdurchführung inkl. MMS-Codekonverter.</li>
+          <li>Erstellung und Pflege von Projekt- und Gerätedokumentationen (Wiki-basiert).</li>
+          <li>Webentwicklung (CSS-Anpassungen für Vodafone Live Portal).</li>
+          <li>Verantwortung für Vodafone CMS und App-Management (z.B. Discover, Updates).</li>
+          <li>Entwicklung der Android-App „Devicepedia“ zur Systemanalyse von Geräten.</li>
+          <li>Service Integration Management für kontaktloses Bezahlen mit NFC.</li>
+          <li>Kommunikation mit Providern in über 13 Ländern.</li>
+          <li>Teamkoordination und Schulung neuer Mitglieder.</li>
+        </ul>
+      </div>
 
-  <h3>Verwendete Technologien</h3>
-  <ul>
-    <li><strong>Testing & Automatisierung:</strong> Selenium WebDriver, Eclipse, Jenkins, TestNG, Quality Center</li>
-    <li><strong>Sprachen & Formate:</strong> Java, XML, CSS</li>
-    <li><strong>Plattformen & Geräte:</strong> Android, iOS, J2ME, Windows Mobile, Symbian, RIM, Bada</li>
-    <li><strong>Tools:</strong> JIRA, Remedy, Microsoft Office, Firebug, MMS Transcoder</li>
-  </ul>
+      <div>
+        <h3 class="text-lg font-semibold text-purple-400 mb-2">Verwendete Technologien</h3>
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-purple-600 px-3 py-1 rounded-full text-sm hover:bg-purple-500 transition">Selenium WebDriver</span>
+          <span class="bg-purple-600 px-3 py-1 rounded-full text-sm hover:bg-purple-500 transition">Eclipse</span>
+          <span class="bg-purple-600 px-3 py-1 rounded-full text-sm hover:bg-purple-500 transition">Jenkins</span>
+          <span class="bg-purple-600 px-3 py-1 rounded-full text-sm hover:bg-purple-500 transition">TestNG</span>
+          <span class="bg-purple-600 px-3 py-1 rounded-full text-sm hover:bg-purple-500 transition">Quality Center</span>
+          <span class="bg-purple-600 px-3 py-1 rounded-full text-sm hover:bg-purple-500 transition">Java</span>
+          <span class="bg-purple-600 px-3 py-1 rounded-full text-sm hover:bg-purple-500 transition">XML</span>
+          <span class="bg-purple-600 px-3 py-1 rounded-full text-sm hover:bg-purple-500 transition">CSS</span>
+          <span class="bg-purple-600 px-3 py-1 rounded-full text-sm hover:bg-purple-500 transition">JIRA</span>
+          <span class="bg-purple-600 px-3 py-1 rounded-full text-sm hover:bg-purple-500 transition">Remedy</span>
+          <span class="bg-purple-600 px-3 py-1 rounded-full text-sm hover:bg-purple-500 transition">Microsoft Office</span>
+          <span class="bg-purple-600 px-3 py-1 rounded-full text-sm hover:bg-purple-500 transition">Firebug</span>
+          <span class="bg-purple-600 px-3 py-1 rounded-full text-sm hover:bg-purple-500 transition">MMS Transcoder</span>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
+
     <footer>
         <p>&copy; 2025 Giovanni De Maio. All rights reserved.</p>
     </footer>
