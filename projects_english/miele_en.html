@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Miele</title>
+    <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
      <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -16,19 +18,28 @@
 </script>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../about.html">About Me</a></li>
-                <li><a href="../projects.html">Projects</a></li>
-                <li><a href="../resume.html">Resume</a></li>
-                <li><a href="../contact.html">Contact</a></li>
-                <li><a href="../de/index_de.html" class="header-button">Deutsch</a>  </li>
-            </ul>
-        </nav>
-    </header>
-
+     <!-- Bootstrap Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+          <ul class="navbar-nav mb-2 mb-md-0">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="../about.html">About Me</a></li>
+            <li class="nav-item"><a class="nav-link" href="../projects.html">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="../resume.html">Resume</a></li>
+            <li class="nav-item"><a class="nav-link" href="../contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link btn btn-outline-secondary" href="../de/index_de.html">Deutsch</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
    <section id="miele-experience" class="flex justify-center items-center min-h-screen bg-black text-white px-4 py-10">
   <div class="animated-card opacity-0 translate-y-4 transition-all duration-1000 ease-out bg-gray-900 p-8 rounded-2xl shadow-lg w-full max-w-6xl">
     
@@ -81,9 +92,11 @@
         <p>&copy; 2025 Giovanni De Maio. All rights reserved.</p>
     </footer>
 
+    
+  
+   <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-
-<body>
-   
 </body>
+
 </html>
